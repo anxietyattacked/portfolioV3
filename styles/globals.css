@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+.MuiTabs-indicator {
+  background-color: #7ed957;
+  color: red;
+}
+.MuiTab-root {
+  color: rgb(24, 176, 189);
+}
+.MuiButtonBase-root {
+  color: #7ed957;
+}
