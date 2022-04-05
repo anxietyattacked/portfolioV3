@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&family=Raleway&display=swap");
 
 .container {
-  padding: 0 2rem;
+  padding: 0 4rem;
   background-color: #131b40;
 }
 /* Hero */
@@ -103,6 +103,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .bgDiv {
   background-color: #fff;
@@ -180,6 +181,7 @@
   border-top: 1px solid #fff;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .footer a {
@@ -239,6 +241,9 @@
   }
 }
 @media (max-width: 600px) {
+  .container {
+    padding: 0 3rem;
+  }
   /* hero */
   .navLink {
     font-size: 1rem;
@@ -261,5 +266,9 @@
   }
   .webIcon {
     font-size: 2rem;
+  }
+  /* Projects */
+  .projectPanel {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
