@@ -14,9 +14,6 @@ a {
 * {
   box-sizing: border-box;
 }
-.MuiTabs-indicator {
+/* .MuiTabs-indicator {
   background-color: #7ed957;
-}
-.tabs.MuiButtonBase-root {
-  color: #000000;
-}
+} */
