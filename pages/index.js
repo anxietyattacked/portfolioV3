@@ -233,6 +233,7 @@ export default function Home() {
                     ":hover": {
                       borderColor: "white",
                       color: "#7ed957",
+                      borderWidth: "0.5rem",
                     },
                   }}
                 >
@@ -344,16 +345,22 @@ export default function Home() {
           <div style={{ display: "grid", placeContent: "center" }}>
             <div className={styles.contactDiv}>
               <Button href="https://www.linkedin.com/in/michaelbergerson">
-                <LinkedInIcon className={styles.contactIcons} />
+                <LinkedInIcon
+                  sx={{ fontSize: "4rem" }}
+                  className={styles.contactIcons}
+                />
               </Button>
               <Button href="https://github.com/anxietyattacked">
                 <GitHubIcon
                   className={styles.contactIcons}
-                  href="https://github.com/anxietyattacked"
+                  sx={{ fontSize: "4rem" }}
                 />
               </Button>
               <Button href="mailto:michaelbergerson@gmail.com">
-                <EmailIcon className={styles.contactIcons} />
+                <EmailIcon
+                  sx={{ fontSize: "4rem" }}
+                  className={styles.contactIcons}
+                />
               </Button>
             </div>
             <h6 className={`${styles.buttonFont}  ${styles.contactText}`}>
