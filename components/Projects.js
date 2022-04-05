@@ -72,6 +72,11 @@ export default function Projects() {
           onChange={handleChange}
           centered={isMobile ? false : true}
           aria-label="Data Science Or Web Development Projects"
+          sx={{
+            ".MuiTabs-indicator": {
+              backgroundColor: "#7ed957",
+            },
+          }}
         >
           <Tab
             icon={<QueryStatsIcon />}
@@ -116,6 +121,13 @@ export default function Projects() {
                       size="small"
                       variant="contained"
                       href={d.Link}
+                      sx={{
+                        backgroundColor: "#131b40",
+                        color: "#fff",
+                        ":hover": {
+                          backgroundColor: "#7ed957",
+                        },
+                      }}
                       className={`${styles.bottonFont} ${styles.webButton}`}
                     >
                       Website
@@ -158,6 +170,13 @@ export default function Projects() {
                       size="small"
                       variant="contained"
                       href={d.Link}
+                      sx={{
+                        backgroundColor: "#131b40",
+                        color: "#fff",
+                        ":hover": {
+                          backgroundColor: "#7ed957",
+                        },
+                      }}
                       className={`${styles.bottonFont} ${styles.webButton}`}
                     >
                       Website
@@ -166,6 +185,7 @@ export default function Projects() {
                       size="small"
                       variant="outlined"
                       href={d.ghLink}
+                      sx={{ color: "#131b40", borderBlockColor: "#131b40" }}
                       className={`${styles.bottonFont} ${styles.gitButton}`}
                     >
                       Github

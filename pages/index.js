@@ -230,6 +230,7 @@ export default function Home() {
                     fontWeight: "bold",
                     color: "#fff",
                     borderColor: "#7ed957",
+                    ":hover": {},
                   }}
                 >
                   Contact Me
@@ -267,7 +268,10 @@ export default function Home() {
             <div className={styles.skillsDiv}>
               <div className={styles.dataDiv}>
                 <div className={styles.dataIconDiv}>
-                  <QueryStatsIcon className={styles.dataIcon} />
+                  <QueryStatsIcon
+                    sx={{ fontSize: "3rem" }}
+                    className={styles.dataIcon}
+                  />
                 </div>
                 <h3
                   className={`${styles.buttonFont}`}
@@ -294,7 +298,10 @@ export default function Home() {
               </div>
               <div className={styles.dataDiv}>
                 <div className={styles.webIconDiv}>
-                  <ComputerIcon className={styles.webIcon} />
+                  <ComputerIcon
+                    sx={{ fontSize: "3rem" }}
+                    className={styles.webIcon}
+                  />
                 </div>
                 <h3
                   className={`${styles.buttonFont}`}
