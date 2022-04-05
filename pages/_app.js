@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <ButtonAppBar />
-      <Component {...pageProps} />)
+      <Component {...pageProps} />
     </div>
   );
 }

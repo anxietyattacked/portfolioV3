@@ -15,11 +15,6 @@ import Projects from "../components/Projects";
 export default function Home() {
   const viz = useRef();
   const [data, setData] = useState();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   useEffect(() => {
     const row = (d) => {
@@ -41,10 +36,10 @@ export default function Home() {
         x = (d, i) => d["item"], // given d in data, returns the (ordinal) x-value
         y = (d) => d["speed"], // given d in data, returns the (quantitative) y-value
         title, // given d in data, returns the title text
-        marginTop = 0, // the top margin, in pixels
+        marginTop = 5, // the top margin, in pixels
         marginRight = 0, // the right margin, in pixels
         marginBottom = 0, // the bottom margin, in pixels
-        marginLeft = 0, // the left margin, in pixels
+        marginLeft = 5, // the left margin, in pixels
         width = 750, // the outer width of the chart, in pixels
         height = 422, // the outer height of the chart, in pixels
         xDomain, // an array of (ordinal) x-values
@@ -186,6 +181,15 @@ export default function Home() {
                   <strong>Languages:</strong>Python, R, SQL, Javascript,
                   Typescript, CSS HTML
                 </p>
+                <p
+                  className={`${styles.buttonFont}`}
+                  style={{ textAlign: "center" }}
+                >
+                  <strong>Technologies:</strong> Tableau, Pandas, NumPy,
+                  Tidyverse, Excel, Google Sheets, Plotly, Seaborn, ggplot2,
+                  Statistics, Jupyter Notebook, BigQuery, APIs, React, D3.js,
+                  Node.js, PostgreSQL, Git
+                </p>
               </div>
               <div className={styles.dataDiv}>
                 <div className={styles.webIconDiv}>
@@ -204,6 +208,16 @@ export default function Home() {
                   <strong>Languages:</strong>Javascript, Typescript, CSS HTML,
                   Python, R, SQL
                 </p>
+                <p
+                  className={`${styles.buttonFont}`}
+                  style={{ textAlign: "center" }}
+                >
+                  <strong>Technologies:</strong> React, D3.js, Plotly.js
+                  Three.js, Material UI, Tailwind CSS, React Router, Formik,
+                  React Table, Node.js, Next.js, Express, Redis, PostgreSQL,
+                  GraphQL, Apollo Server, Argon2, Typeorm, Stripe, Git, Tableau,
+                  Pandas, Tidyverse, Plotly
+                </p>
               </div>
             </div>
           </div>
@@ -218,7 +232,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>Contact</div>
           <div style={{ display: "grid", placeContent: "center" }}>
             <div className={styles.contactDiv}>
-              <Button href="">
+              <Button href="https://www.linkedin.com/in/michaelbergerson">
                 <LinkedInIcon className={styles.contactIcons} />
               </Button>
               <Button href="https://github.com/anxietyattacked">
@@ -237,18 +251,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}>Michael Bergerson © 2022</footer>
     </div>
   );
 }

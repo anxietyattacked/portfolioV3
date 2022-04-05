@@ -143,6 +143,22 @@
 .tab {
   color: black;
 }
+.projectPanel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.webButton {
+  background-color: #131b40;
+  color: #fff;
+}
+.webButton:hover {
+  background-color: #7ed957;
+}
+.gitButton {
+  color: #131b40;
+  border-color: #131b40;
+}
 /* Contact */
 .contactDiv {
   display: flex;
@@ -161,7 +177,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #fff;
   justify-content: center;
   align-items: center;
 }
@@ -194,6 +210,10 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  /* Projects */
+  .projectPanel {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 800px) {
   /* hero */
@@ -212,6 +232,10 @@
   }
   .webIcon {
     font-size: 3rem;
+  }
+  /* Projects */
+  .projectPanel {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 600px) {
