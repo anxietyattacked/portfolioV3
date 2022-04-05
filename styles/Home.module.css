@@ -121,16 +121,24 @@
   display: grid;
 }
 .dataIconDiv {
+  display: grid;
+  place-content: center;
+  justify-self: center;
   justify-self: center;
   background-color: #131b40;
-  padding: 0.75rem;
-  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 .webIconDiv {
+  display: grid;
+  place-content: center;
   justify-self: center;
   background-color: #7ed957;
-  padding: 0.75rem;
-  border-radius: 100%;
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 .dataIcon {
   font-size: 4rem;
