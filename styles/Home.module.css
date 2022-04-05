@@ -124,7 +124,6 @@
   display: grid;
   place-content: center;
   justify-self: center;
-  justify-self: center;
   background-color: #131b40;
   height: 100px;
   width: 100px;
@@ -135,7 +134,6 @@
   place-content: center;
   justify-self: center;
   background-color: #7ed957;
-
   height: 100px;
   width: 100px;
   border-radius: 50%;

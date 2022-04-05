@@ -139,7 +139,7 @@ export default function TemporaryDrawer() {
         sx={{ mr: 2, color: "white", fontWeight: "Bold" }}
         onClick={toggleDrawer("left", true)}
       >
-        <MenuIcon />
+        <MenuIcon sx={{ fontSize: "3rem" }} />
       </IconButton>
       <Drawer
         anchor={"left"}

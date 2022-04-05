@@ -230,7 +230,10 @@ export default function Home() {
                     fontWeight: "bold",
                     color: "#fff",
                     borderColor: "#7ed957",
-                    ":hover": {},
+                    ":hover": {
+                      borderColor: "white",
+                      color: "#7ed957",
+                    },
                   }}
                 >
                   Contact Me

@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 import Image from "next/image";
 import { dsData } from "../data/dsData";
 import { webData } from "../data/webData";
-import { display } from "@mui/system";
+import { display, width } from "@mui/system";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -124,6 +124,7 @@ export default function Projects() {
                       sx={{
                         backgroundColor: "#131b40",
                         color: "#fff",
+                        alignSelf: "end",
                         ":hover": {
                           backgroundColor: "#7ed957",
                         },
@@ -164,6 +165,7 @@ export default function Projects() {
                       display: "grid",
                       placeContent: "center",
                       gridTemplateColumns: "repeat(2, 1fr)",
+                      width: "100%",
                     }}
                   >
                     <Button
@@ -185,7 +187,14 @@ export default function Projects() {
                       size="small"
                       variant="outlined"
                       href={d.ghLink}
-                      sx={{ color: "#131b40", borderBlockColor: "#131b40" }}
+                      sx={{
+                        color: "#131b40",
+                        borderBlockColor: "#131b40",
+                        ":hover": {
+                          backgroundColor: "#131b40",
+                          color: "white",
+                        },
+                      }}
                       className={`${styles.bottonFont} ${styles.gitButton}`}
                     >
                       Github
