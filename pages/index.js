@@ -224,6 +224,13 @@ export default function Home() {
                   href="#contact"
                   variant="outlined"
                   className={`${styles.buttonFont} ${styles.heroButton}`}
+                  sx={{
+                    marginTop: "2rem",
+                    borderWidth: "0.5rem",
+                    fontWeight: "bold",
+                    color: "#fff",
+                    borderColor: "#7ed957",
+                  }}
                 >
                   Contact Me
                 </Button>
