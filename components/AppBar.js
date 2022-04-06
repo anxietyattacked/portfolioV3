@@ -8,11 +8,19 @@ import styles from "../styles/Home.module.css";
 
 export default function ButtonAppBar() {
   return (
-    <Box elevation={0} sx={{ flexGrow: 1, backgroundColor: "#131b40" }}>
+    <Box
+      elevation={0}
+      sx={{
+        flexGrow: 1,
+        backgroundColor: "#131b40",
+      }}
+    >
       <AppBar
         elevation={0}
         position="static"
-        sx={{ backgroundColor: "#131b40" }}
+        sx={{
+          backgroundColor: "#131b40",
+        }}
       >
         <Toolbar>
           <TemporaryDrawer></TemporaryDrawer>

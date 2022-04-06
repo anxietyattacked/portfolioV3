@@ -55,7 +55,7 @@ export default function Home() {
       // Compute values.
       const X = d3.map(data, x);
       const Y = d3.map(data, y);
-
+      const colors = ["#ffbd59", "#ff5757", "#2d8bba", "#8C52FF", "#7ED957"];
       // Compute default domains, and unique the x-domain.
       if (xDomain === undefined) xDomain = X;
       if (yDomain === undefined) yDomain = [0, d3.max(Y)];
@@ -79,18 +79,19 @@ export default function Home() {
 
       const bar = svg
         .append("g")
-        .attr("fill", color)
         .selectAll("rect")
         .data(I)
         .join("rect")
+        .attr("fill", (i) => colors[i])
         .attr("x", (i) => xScale(X[i]))
         .attr("y", (i) => yScale(Y[i]))
         .attr("height", (i) => yScale(0) - yScale(Y[i]))
         .attr("width", xScale.bandwidth())
-        .attr("stroke", "white")
-        .attr("stroke-width", "5px")
+        // .attr("stroke", "white")
+        // .attr("stroke-width", "5px")
         .attr("rx", "0.5rem") // how much to round corners - to be transitioned below
-        .attr("ry", "0.5rem");
+        .attr("ry", "0.5rem")
+        .attr("opacity", 1);
 
       // function expandBars() {
       //   bar
