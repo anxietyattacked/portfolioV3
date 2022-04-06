@@ -93,31 +93,6 @@ export default function Home() {
         .attr("ry", "0.5rem")
         .attr("opacity", 1);
 
-      // function expandBars() {
-      //   bar
-      //     .transition()
-      //     .ease(d3.easeCubic)
-      //     .duration(5000)
-      //     .attr("fill", "#7ed957")
-      //     .on("end", contractBars);
-      // }
-
-      // function contractBars() {
-      //   bar
-      //     .transition()
-      //     .ease(d3.easeCubic)
-      //     .duration(5000)
-      //     .attr("fill", "#fff")
-      //     .on("end", expandBars);
-      // }
-
-      // bar.join(
-      //   (enter) => enter,
-
-      //   (update) => update.call((update) => update.call(expandBars)),
-      //   (exit) => exit.remove()
-      // );
-
       return svg.node();
     }
     if (data) {
@@ -247,6 +222,7 @@ export default function Home() {
             <svg className={styles.viz} ref={viz} />
           </div>
         </section>
+
         <section id="about" className={styles.aboutContainer}>
           <div className={styles.sectionHeader}>About</div>
           <div className={styles.bgDiv}>

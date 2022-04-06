@@ -88,6 +88,10 @@
   width: 100%;
 }
 /* About */
+.test {
+  background-color: #fff;
+  padding: 2rem 0;
+}
 .aboutContainer {
   padding-top: 2rem;
 }
@@ -97,6 +101,7 @@
   padding: 0 2rem;
 }
 .aboutText {
+  font-family: "Raleway", sans-serif;
 }
 .sectionHeader {
   color: #7ed957;
@@ -107,7 +112,6 @@
 }
 .bgDiv {
   background-color: #fff;
-  min-height: 300;
   width: 100%;
   border-radius: 0.5rem;
   padding: 2rem 0.75rem;
@@ -251,7 +255,7 @@
 }
 @media (max-width: 600px) {
   .container {
-    padding: 0 2.5rem;
+    padding: 0 2rem;
   }
   /* hero */
   .navLink {
