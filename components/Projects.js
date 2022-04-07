@@ -95,7 +95,14 @@ export default function Projects() {
         <div className={styles.projectPanel}>
           {!isSSR
             ? dsData.map((d) => (
-                <Card sx={{ maxWidth: 345 }} key={d.Link}>
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                  key={d.Link}
+                >
                   <a href={d.link}>
                     <Image
                       src={d.image}
@@ -116,7 +123,13 @@ export default function Projects() {
                       {d.info}
                     </Typography>
                   </CardContent>
-                  <CardActions sx={{ display: "grid", placeContent: "center" }}>
+                  <CardActions
+                    sx={{
+                      display: "grid",
+                      placeContent: "end center",
+                      verticalAlign: "bottom",
+                    }}
+                  >
                     <Button
                       size="small"
                       variant="contained"
@@ -124,7 +137,7 @@ export default function Projects() {
                       sx={{
                         backgroundColor: "#131b40",
                         color: "#fff",
-                        alignSelf: "end",
+                        verticalAlign: "bottom",
                         ":hover": {
                           backgroundColor: "#7ed957",
                         },
