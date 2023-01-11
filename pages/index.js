@@ -134,21 +134,19 @@ export default function Home() {
         </section>
 
         <section id="about" className={styles.aboutContainer}>
-          <div className={styles.sectionHeader}>About</div>
+          <div className={styles.sectionHeader}>Who am I?</div>
           <div className={styles.bgDiv}>
             <div className={styles.aboutDiv}>
               <p className={`${styles.buttonFont} ${styles.aboutText}`}>
-                I graduated from Oregon State University with a Bachelors of
-                Science in Economics. After college I started learning Python
-                for data analysis. After learning the basics of programing, I
-                wanted to learn the data visualization library d3.js and web
-                development in general. So I learned JavaScript, React, CSS,
-                HTML and started building projects. I have also continued
-                learning about data analysis and data science as well. For data
-                analysis I frequently use Python, R, SQL, Tableau, Excel,
-                Pandas, Tidyverse, and Plotly. For web development I frequently
-                JavaScript TypeScript, React, CSS, HTML, Node, GraphQL, and
-                D3.js.
+                My name is Michael Bergerson, I graduated from Oregon State
+                University with a Bachelors of Science in Economics. My skill
+                set is a unique mix between data science and web development. I
+                can clean, visualize, manipulate, and explore data. While also
+                building frontends and backends for the web. I was pursuing data
+                analytics when I then picked up web development while learning
+                data visualization libraries. Whether it is purely data
+                analytics, web development or both. I can apply my knowledge and
+                determination to help solve your problems.
               </p>
             </div>
           </div>
