@@ -226,7 +226,7 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className={styles.aboutContainer}>
-          <div className={styles.sectionHeader}>Contact</div>
+          <div className={styles.sectionHeader}></div>
           <div style={{ display: "grid", placeContent: "center" }}>
             <div className={styles.contactDiv}>
               <Button href="https://www.linkedin.com/in/michaelbergerson">
